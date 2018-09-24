@@ -1,0 +1,95 @@
+.login__wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.login {
+  background-color: $off-white;
+  box-shadow: 0 5px 30px 0 #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $m-size $l-size;
+}
+
+.login__title {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+}
+
+.login__title {
+  color: $dark-blue;
+}
+
+.login__title sup {
+  font-size: 1rem;
+}
+
+.login .logo {
+  padding: 0;
+}
+
+.login .logo__icon {
+  color: $dark-blue;
+  height: $xl-size;
+  margin-right: $m-size;
+  width: $l-size;
+}
+
+.login p {
+  color: $dark-blue;
+  font-size: $font-size-large;
+  margin-top: $m-size;
+}
+
+.login label {
+  margin-bottom: $xs-size;
+}
+
+.login label span {
+  color: $red;
+}
+
+.login input {
+  border: 1px solid #cacccd;
+  height: 50px;
+  font-size: $font-size-large;
+  font-weight: 300;
+  margin-bottom: $m-size;
+  padding: $s-size;
+}
+
+.login a {
+  color: $red;
+  text-decoration: none;
+}
+
+.login button {
+  background: $dark-blue;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: $font-size-medium;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: $m-size;
+  margin-top: $l-size;
+  padding: $s-size;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.login button:hover {
+  background-color: lighten($dark-blue, 20%);
+  cursor: pointer;
+}
+
+.login__legal {
+  color: $light-grey;
+  margin: $m-size;
+  opacity: .8;
+}
