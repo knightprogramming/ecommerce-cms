@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import placeholderReducer from "./placeholderReducer";
+import authReducer from "./auth";
 
 const rootReducer = combineReducers({
-  placeholderReducer: placeholderReducer
+  auth: authReducer
 });
 
 export default rootReducer;

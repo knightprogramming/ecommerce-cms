@@ -1,7 +1,10 @@
 import React from "react";
-import Logo from './Logo'
+import PropTypes from "prop-types";
+import Logo from './Logo';
+import { connect } from "react-redux";
+import { login } from "../../actions/auth";
 
-const Login = () => (
+const Login = ({ login }) => (
   <div className="login__wrapper">
     <div className="login">
       <div className="login__title">
@@ -22,7 +25,7 @@ const Login = () => (
       <input id="password" type="text" name="password" />
       <a href="#">Forgot your password?</a>
       <div>
-        <button>Sign in</button>
+        <button onClick={login}>Sign in</button>
       </div>
     </div>
     <span className="login__legal">
@@ -31,4 +34,15 @@ const Login = () => (
   </div>
 );
 
-export default Login
+const mapDispatchToProps = dispath => ({
+  login: () => dispath(login())
+});
+
+Login.propTypes = {
+  login: PropTypes.func.isRequired
+};
+
+export default connect(
+  undefined,
+  mapDispatchToProps
+)(Login);
