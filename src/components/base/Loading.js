@@ -1,13 +1,30 @@
 import React from 'react'
 
+const divStyle = {
+  alignItems: 'center',
+  display: 'flex',
+  flex: '1 0 auto',
+  flexDirection: 'column',
+  justifyContent: 'center'
+}
+
+const svgStyle = {
+  "webkiAanimation": "spin 2s linear infinite" /* Safari */,
+  animation: "spin 2s linear infinite",
+  color: "#fafafa",
+  height: "3.2rem",
+  width: "3.2rem"
+};
+
 const Loading = () => (
-  <div className="loading">
+  <div className="loading" style={divStyle}>
     <svg
       aria-hidden="true"
       className="loading__icon"
       data-prefix="fas"
       data-icon="spinner"
       role="img"
+      style={svgStyle}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
