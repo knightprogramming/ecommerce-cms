@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $dark-blue;
+  font-family: $base-font-family;
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
