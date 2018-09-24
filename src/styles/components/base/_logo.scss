@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  padding: $s-size;
+}
+
+.logo__icon {
+  color: $off-white;
+  width: 2.25rem;
+  height: 2.25rem;
+}
