@@ -1,8 +1,9 @@
 import React from "react";
+import DashboardNav from './DashboardNav';
 
 const Dashboard = () => (
   <div className="dashboard">
-    {/* <DashboardNav /> */}
+    <DashboardNav />
     <div className="dashboard__main">
       {/* <DashboardRouter /> */}
     </div>

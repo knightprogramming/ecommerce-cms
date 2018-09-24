@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { hot } from 'react-hot-loader'
 
 // test component
-import DashboardNav from './dashboard/DashboardNav'
+import Dashboard from "./dashboard/Dashboard";
 
-const App = () => <DashboardNav />;
+const App = () => <Dashboard />;
 
 App.propTypes = {
   children: PropTypes.element
