@@ -2,8 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { hot } from 'react-hot-loader'
 
+// test component
+import Loading from './base/Loading'
+
 const App = () => (
-  <div>Start</div>
+  <Loading />
 )
 
 App.propTypes = {
