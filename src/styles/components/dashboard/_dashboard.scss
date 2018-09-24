@@ -1,0 +1,13 @@
+.dashboard {
+  background-color: $off-white;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+}
+
+.dashboard__main {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+}

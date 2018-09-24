@@ -6,5 +6,10 @@
 @import './base/base';
 
 /* components */
+
+// base
 @import './components/base/loading';
 @import './components/base//logo';
+
+// dashboard
+@import './components/dashboard/dashboard';

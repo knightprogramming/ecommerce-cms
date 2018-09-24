@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import { hot } from 'react-hot-loader'
 
 // test component
-import Logo from './base/Logo'
+import Dashboard from './dashboard/Dashboard'
 
 const App = () => (
-  <Logo />
+  <Dashboard />
 )
 
 App.propTypes = {
