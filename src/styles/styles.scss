@@ -8,10 +8,7 @@
 /* components */
 
 // base
-@import './components/base/loading';
-@import './components/base//logo';
+@import './components/base/index';
 
 // dashboard
-@import './components/dashboard/dashboard';
-@import './components/dashboard/dashboardNav';
-@import './components/dashboard/dashboardNavItems';
+@import './components/dashboard/index';
