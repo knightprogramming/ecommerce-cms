@@ -23,7 +23,10 @@ import {
   faChartBar,
   faStore,
   faCogs,
-  faQuestion
+  faQuestion,
+  faSearch,
+  faBell,
+  faUser
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -38,7 +41,10 @@ library.add(
   faChartBar,
   faStore,
   faCogs,
-  faQuestion
+  faQuestion,
+  faSearch,
+  faBell,
+  faUser
 );
 
 const store = configureStore()

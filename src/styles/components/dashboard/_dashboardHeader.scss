@@ -1,0 +1,29 @@
+.dashboard__header {
+  align-items: center;
+  background-color: $light-grey;
+  display: flex;
+  justify-content: space-between;
+  padding: $xs-size $m-size;
+}
+
+.dashboard__header-actions svg {
+  margin-right: $m-size;
+}
+
+.dashboard__header-actions button {
+  background: $dark-blue;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: $font-size-x-small;
+  font-weight: 300;
+  line-height: 1;
+  padding: .8rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dashboard__header-actions button:hover {
+  background-color: lighten($dark-blue, 20%);
+  cursor: pointer;
+}
