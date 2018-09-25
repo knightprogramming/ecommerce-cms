@@ -7,7 +7,39 @@ import './styles/styles.scss'
 import { logout } from './actions/auth'
 import Loading from './components/base/Loading';
 
-require('./favicon.ico')
+require('./favicon.png')
+
+// font awesome set up
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faSpinner,
+  faChessKnight,
+  faTachometerAlt,
+  faDollarSign,
+  faCube,
+  faMale,
+  faBullhorn,
+  faObjectGroup,
+  faChartBar,
+  faStore,
+  faCogs,
+  faQuestion
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  faSpinner,
+  faChessKnight,
+  faTachometerAlt,
+  faDollarSign,
+  faCube,
+  faMale,
+  faBullhorn,
+  faObjectGroup,
+  faChartBar,
+  faStore,
+  faCogs,
+  faQuestion
+);
 
 const store = configureStore()
 
