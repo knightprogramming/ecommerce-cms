@@ -1,11 +1,11 @@
 import React from "react";
-import { connect } from 'react-redux'
+import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { logout } from '../../actions/auth'
+import { logout } from "../../actions/auth";
 
-const DashboardFooter = ({ logout }) => (
+const DashboardHeader = ({ pathname, logout }) => (
   <div className="dashboard__header">
-    <h1>Dashboard</h1>
+    <h1>{pathname === "/" ? "Dashboard" : pathname.split("/")[1].replace(/^\w/, c => c.toUpperCase())}</h1>
     <div className="dashboard__header-actions">
       <FontAwesomeIcon icon="search" />
       <FontAwesomeIcon icon="bell" />
@@ -15,8 +15,17 @@ const DashboardFooter = ({ logout }) => (
   </div>
 );
 
+const mapStateToProps = state => ({
+  pathname: state.router.location.pathname,
+  search: state.router.location.search,
+  hash: state.router.location.hash
+});
+
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout())
 });
 
-export default connect(undefined, mapDispatchToProps)(DashboardFooter);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(DashboardHeader);
