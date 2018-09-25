@@ -27,7 +27,7 @@
     "open:cover": "npm run test:cover && opn ./coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
-  "author": "Cory House",
+  "author": "Taylor Stauss",
   "license": "MIT",
   "dependencies": {
     "connected-react-router": "4.4.1",
@@ -99,24 +99,10 @@
     "webpack-dev-middleware": "3.2.0",
     "webpack-hot-middleware": "2.22.3"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "react-router",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "redux",
-    "flux",
-    "boilerplate",
-    "starter"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/coryhouse/react-slingshot"
+    "url": "https://github.com/knightprogramming/ecommerce-cms-front-end"
   },
   "jest": {
     "moduleNameMapper": {
@@ -199,6 +185,9 @@
       "jquery": true,
       "jest": true
     },
-    "globals": {}
+    "globals": {},
+    "rules": {
+      "no-console": "off"
+    }
   }
 }
