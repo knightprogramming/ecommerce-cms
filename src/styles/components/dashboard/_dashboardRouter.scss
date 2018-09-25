@@ -1,0 +1,10 @@
+.dashboard__router {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard__router-content {
+  padding: $m-size;
+}
