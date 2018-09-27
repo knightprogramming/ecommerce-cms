@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types'
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { logout } from "../../actions/auth";
@@ -16,16 +17,19 @@ const DashboardHeader = ({ pathname, logout }) => (
 );
 
 const mapStateToProps = state => ({
-  pathname: state.router.location.pathname,
-  search: state.router.location.search,
-  hash: state.router.location.hash
+  pathname: state.router.location.pathname
 });
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout())
 });
 
+DashboardHeader.propTypes = {
+  pathname: PropTypes.string.isRequired,
+  logout: PropTypes.func.isRequired
+}
+
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(DashboardHeader);
+)(DashboardHeader)
