@@ -1,10 +1,5 @@
-import * as types from '../constants/actionTypes'
+import { lOGIN, LOGOUT } from '../constants/actionTypes'
 
-export const login = () => ({
-  type: types.lOGIN,
-  uid: 'testuser'
-})
+export const login = () => ({ type: lOGIN, uid: "testuser" });
 
-export const logout = () => ({
-  type: types.LOGOUT
-})
+export const logout = () => ({ type: LOGOUT });
