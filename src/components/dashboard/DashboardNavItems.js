@@ -157,7 +157,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 DashboardNavItems.propTypes = {
-  selectedNavItem: PropTypes.string.isRequired,
+  selectedNavItem: PropTypes.string,
   pathname: PropTypes.string.isRequired,
   selectNavItem: PropTypes.func.isRequired,
   clickNavItem: PropTypes.func.isRequired

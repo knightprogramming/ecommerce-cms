@@ -212,7 +212,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 DashboardNavItemsMenus.propTypes = {
-  clickedNavItem: PropTypes.string.isRequired,
+  clickedNavItem: PropTypes.string,
   closeNavItem: PropTypes.func.isRequired
 };
 
