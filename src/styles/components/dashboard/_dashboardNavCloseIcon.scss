@@ -1,0 +1,51 @@
+.close-icon {
+  font-size: $font-size-small;
+  height: 50px;
+  left: 55px;
+  position: absolute;
+  transform: translateX(0);
+  transition-property: transform;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  width: 50px;
+  z-index: 998;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+}
+
+.close-icon__div {
+  background-color: black;
+  border-radius: 3px;
+  height: 5px;
+  left: 12.5px;
+  margin: 2px 0;
+  position: relative;
+  top: 20px;
+  transform: rotate(0);
+  transition-property: transform;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  // visibility: hidden;
+  width: 25px;
+}
+
+.close-icon__div:nth-child(2) {
+  top: 12.5px;
+}
+
+.close-icon.close-icon--active {
+  // left: 355px;
+  transform: translateX(300px);
+}
+
+.close-icon__div.close-icon__div--active {
+  transform: rotate(135deg);
+  visibility: visible !important;
+}
+
+.close-icon__div.close-icon__div--active:nth-child(1) {
+  transform: rotate(-135deg);
+  visibility: visible !important;
+}

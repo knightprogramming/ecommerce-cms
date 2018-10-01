@@ -1,4 +1,5 @@
 export const lOGIN = 'LOGIN'
 export const LOGOUT = 'LOGOUT'
-export const SELECTNAV = 'SELECTNAV'
-export const CLICKNAV = 'CLICKNAV'
+export const SELECTNAVITEM = 'SELECTNAVITEM'
+export const CLICKNAVITEM = 'CLICKNAVITEM'
+export const CLOSENAVITEM = 'CLOSENAVITEM'

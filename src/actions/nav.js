@@ -1,5 +1,7 @@
-import { SELECTNAV, CLICKNAV } from "../constants/actionTypes";
+import { SELECTNAVITEM, CLICKNAVITEM, CLOSENAVITEM } from "../constants/actionTypes";
 
-export const selectNav = id => ({ type: SELECTNAV, id });
+export const selectNavItem = id => ({ type: SELECTNAVITEM, id });
 
-export const clickNav = id => ({ type: CLICKNAV, id });
+export const clickNavItem = id => ({ type: CLICKNAVITEM, id });
+
+export const closeNavItem = () => ({ type: CLOSENAVITEM });
